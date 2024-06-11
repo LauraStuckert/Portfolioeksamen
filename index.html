@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forside</title>
+    <link rel="stylesheet" href="CSS/generel.css" />
+    <link rel="stylesheet" href="CSS/burger.css" />
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="icon" href="Images/Favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="Index.html"><img src="Images/Logo.svg" alt="Logo" /></a>
+        <ul class="nav_menu">
+          <li class="nav_punkt">
+            <a href="Index.html" class="nav_link">Forside</a>
+          </li>
+          <li class="nav_punkt">
+            <a href="Om_mig.html" class="nav_link">Om mig</a>
+          </li>
+          <li class="nav_punkt">
+            <a href="Tema2.html" class="nav_link">Tema 2</a>
+          </li>
+          <li class="nav_punkt">
+            <a href="Tema3.html" class="nav_link">Tema 3</a>
+          </li>
+          <li class="nav_punkt">
+            <a href="Tema4.html" class="nav_link">Tema 4</a>
+          </li>
+          <li class="drop_down">
+            <a href="#" class="nav_link">Tema 5</a>
+            <ul class="drop_content">
+              <li>
+                <a href="Tema5_passion.html" class="nav_link">Passionssite</a>
+              </li>
+              <li>
+                <a href="Tema5_virksomhed.html" class="nav_link"
+                  >Virksomhedssite</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="herosection">
+        <script
+          src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+          type="module"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></script>
+
+        <dotlottie-player
+          src="https://lottie.host/ea1686b1-63e9-488f-8e8c-70a5931743d7/nQAouqk1vF.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></dotlottie-player>
+      </section>
+      <section class="section_general">
+        <h2>
+          <span class="line"></span>Five Learnings<span class="line"></span>
+        </h2>
+        <p>Programmer som jeg er blevet introduceret for på 1. semester</p>
+        <div class="img_learnings">
+          <img
+            src="Images/Index/Illustratorlogo.svg"
+            alt="Adobe Illustrator logo"
+          />
+          <img src="Images/Index/figmalogo.svg" alt="Figma logo" />
+          <img src="Images/Index/VSClogo.svg" alt="Visual Studio code logo" />
+          <img
+            src="Images/Index/premireproklogo.svg"
+            alt="Adobe Premiere Pro logo"
+          />
+          <img src="Images/Index/filezillalogo.svg" alt="File Zilla logo" />
+        </div>
+      </section>
+      <section class="section_general">
+        <h2>
+          <span class="line"></span>Mine projekter<span class="line"></span>
+        </h2>
+        <div class="carousel">
+          <button class="prev" onclick="prevSlide()">❮</button>
+          <div class="carousel_wrapper">
+            <div class="carousel-images">
+              <a href="Tema2.html"
+                ><img src="Images/Index/T2.svg" alt="Billede tema 2"
+              /></a>
+              <div class="carousel-caption">T2: Grunlæggende UI // Website</div>
+            </div>
+            <div class="carousel-images">
+              <a href="Tema3.html"
+                ><img src="Images/Index/T3.svg" alt="Billede tema 3"
+              /></a>
+              <div class="carousel-caption">
+                T3: Grunlæggende UX // Emnesite
+              </div>
+            </div>
+            <div class="carousel-images">
+              <a href="Tema4.html"
+                ><img src="Images/Index/T4.svg" alt="Billede tema 4"
+              /></a>
+              <div class="carousel-caption">
+                T4: Grunlæggende Animation // Spil
+              </div>
+            </div>
+            <div class="carousel-images">
+              <a href="Tema5_passion.html"
+                ><img src="Images/Index/T5_1.svg" alt="Billede tema 5"
+              /></a>
+              <div class="carousel-caption">
+                T5: Grunlæggende indhold // Passionssite
+              </div>
+            </div>
+            <div class="carousel-images">
+              <a href="Tema5_virksomhed.html"
+                ><img src="Images/Index/T5_2.svg" alt="Billede tema 5"
+              /></a>
+              <div class="carousel-caption">
+                T5: Grundlæggende indhold // Virksomhedssite
+              </div>
+            </div>
+          </div>
+          <button class="next" onclick="nextSlide()">❯</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_mobil footer_desk">
+        <div class="footer_div">
+          <h3>LauDesign</h3>
+          <p>
+            LauDesign er min portfoliosite, med projekter udarbejdet i løbet af
+            min tid som multimediedesigner. Læs mere om mig
+            <a href="Om_mig.html">her</a>.
+          </p>
+        </div>
+        <div class="footer_div">
+          <h3>Følg med her:</h3>
+          <a href="https://www.instagram.com/laura_stuckert/" target="_blank"
+            ><img src="Images/instagram.svg" alt="Instagram ikon"
+          /></a>
+          <a href="https://www.facebook.com/laura.stuckert/" target="_blank"
+            ><img src="Images/facebook.svg" alt="Facebook ikon"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/laura-hove-stuckert-711480221/"
+            target="_blank"
+            ><img src="Images/linkedin.svg" alt="LinkedIn Ikon"
+          /></a>
+        </div>
+        <div class="footer_div">
+          <h3>Kontakt:</h3>
+          <div class="footer_kontakt">
+            <img src="Images/user.svg" alt="Bruger ikon" />
+            <p>Laura Hove Stuckert</p>
+            <a href="mailto:last0003@stud.kea.dk"
+              ><img src="Images/mail.svg" alt="Mail ikon"
+            /></a>
+            <a href="mailto:last0003@stud.kea.dk"
+              ><p>last0003@stud.kea.dk</p></a
+            >
+            <a
+              href="https://www.google.com/maps/place/Københavns+Erhvervsakademi"
+              target="_blank"
+              ><img src="Images/map-pin.svg" alt="Lokation ikon"
+            /></a>
+            <a
+              href="https://www.google.com/maps/place/Københavns+Erhvervsakademi"
+              target="_blank"
+              ><p>Københavns Erhvervsakademi</p></a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="Java/carousel.js"></script>
+    <script src="Java/burger.js"></script>
+  </body>
+</html>

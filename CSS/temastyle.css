@@ -1,0 +1,166 @@
+.learning_list {
+  margin: 20px;
+}
+
+.temabeskrivelse {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    text-align: left;
+  }
+}
+.step_beskrivelse {
+  p {
+    text-align: left;
+  }
+  li {
+    font-family: "Raleway";
+    line-height: 1.5;
+    font-weight: 600;
+  }
+}
+.step_container {
+  margin: 10px;
+}
+
+.step_billeder {
+  gap: 20px;
+  img {
+    width: 100%;
+  }
+}
+
+.citat {
+  p {
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+  }
+}
+
+/* .section_funfacts {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: start;
+} */
+
+.img_funfacts {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+  p {
+    margin: 0;
+    border: 1px solid #b74636;
+    font-family: Playfair Display;
+    padding: 5px;
+  }
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.youtubefilm {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 30px;
+  .iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 8/3.5;
+    border: none;
+  }
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border: #b74636 3px solid;
+}
+
+@media (min-width: 800px) {
+  .temabeskrivelse {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+    img {
+      width: 100%;
+    }
+  }
+  .step_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .step_billeder {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-content: center;
+  }
+  .section_funfacts {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: start;
+  }
+
+  .links {
+    text-align: right;
+    margin: 30px;
+    padding: 10px 30px;
+    border: 2px solid #b74636;
+    font-weight: 500;
+    :hover {
+      color: #b74636;
+      border-bottom: #b74636 1px solid;
+    }
+  }
+}
+
+@media (max-width: 799px) {
+  .temabeskrivelse {
+    display: grid;
+    grid-template-columns: 1fr;
+    img {
+      width: 40%;
+    }
+  }
+
+  p {
+    font-size: 12px;
+  }
+  .step_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    p {
+      font-size: 12px;
+    }
+  }
+  .step_billeder {
+    display: flex;
+  }
+
+  .img_funfacts {
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: auto;
+    }
+  }
+
+  .links {
+    text-align: center;
+    align-items: center;
+    margin: 30px;
+    padding: 10px 30px;
+    border: 2px solid #b74636;
+    font-weight: 500;
+    :hover {
+      color: #b74636;
+      border-bottom: #b74636 1px solid;
+    }
+  }
+}
